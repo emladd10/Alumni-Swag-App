@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Alumni-Swag-App"
+    }
+  },
+  "defaultProject": "Alumni-Swag-App",
+  "cli": {
+    "analytics": "289a9bbf-53e5-4cf6-b4c4-5bd13bb76192"
+  }
 }
