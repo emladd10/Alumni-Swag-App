@@ -11,5 +11,10 @@ export class CatalogComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
+export const Product = [
+  { id: 1, name: 'Tshirt', image: ''},
+  { id: 2, name: 'Mug', image: ''}, 
+  { id: 3, name: 'Sticker', image: ''}
+]
