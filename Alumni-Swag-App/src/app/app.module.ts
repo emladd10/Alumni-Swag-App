@@ -1,23 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { CatalogComponent } from './catalog/catalog.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { Routes } from '@angular/router';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
-const routes: Routes = [
-  {path: 'catalog', component: CatalogComponent},
-  {path: 'shopping-cart', component: ShoppingCartComponent},
-  {path: '', redirectTo: '/catalog', pathMatch:'full'}
-];
+import { AppComponent } from './app.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CatalogComponent,
-    ShoppingCartComponent,
+    routingComponents,
   ],
   imports: [
     BrowserModule,
