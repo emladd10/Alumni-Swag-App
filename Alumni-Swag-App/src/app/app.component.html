@@ -1,8 +1,9 @@
-  <div style="text-align: center;">
+  <div class="container">
+      <div style="text-align: center;">
       <h3>Oklahoma State Alumni Swag</h3>
   </div>
 
- <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+ <nav class="navbar- navbar-expand-sm bg-light navbar-dark">
     <ul class="navbar-nav">
       <li class="nav-item">
         <button class="m-1 btn btn-light btn-outline-warning" Buttonlabel = "Home" routerLink = "/home" routerLinkActive = "active"> Home
@@ -15,14 +16,26 @@
       </li>
 
       <li class="nav-item">
-        <button class="m-1 btn btn-light btn-outline-warning" Buttonlabel = "Shopping" routerLink = "/shopping-cart" routerLinkActive = "active"> Shopping Cart
+        <button  class="m-1 btn btn-light btn-outline-warning"  Buttonlabel = "Shopping" routerLink = "/shopping-cart" routerLinkActive = "active" > Shopping Cart
       </button>
       </li>
     </ul>
   </nav>
 
+  <!--
+  <app-home *ngIF="Home"></app-home>
+  <app-catalog *ngIF="Catalog"></app-catalog>
+  <app-shopping-cart *ngIF="Shopping"></app-shopping-cart>
+  -->
+
+  
+  <div>
+    <!-- insert picture of OSU-->
+  </div>
+
 
 
   <!-- routed view goes here! -->
   <router-outlet></router-outlet>
+</div>
 

@@ -12,3 +12,13 @@
     padding-top: 10px;
     
 }
+
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-outline-warning {
+    color: rgb(255, 145, 0);
+}
