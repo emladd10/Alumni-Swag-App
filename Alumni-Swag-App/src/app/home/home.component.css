@@ -1,3 +1,25 @@
 .white {
     color: white;
 }
+
+.homepage {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: dashed;
+    background-color: orange;
+    border-width: 5px;
+}
+
+.picture {
+    border-style: solid;
+    text-align: right;
+    border-width: 10px;
+
+}
+
+.hometext {
+    border-color: rgb(255, 145, 0);
+}
