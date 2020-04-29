@@ -8,10 +8,7 @@
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border-style: dashed;
-    background-color: orange;
-    border-width: 5px;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .picture {
@@ -19,16 +16,28 @@
     text-align: right;
     border-width: 10px;
     margin-left: 50px;
+    margin-right: 50px;
+    border-color: black;
 }
 
 .hometext {
     border-color: rgb(255, 145, 0);
     border-left: dotted;
-    border-right: dotted;
-    background-color: rgba(255, 145, 0, 0.411);
-    
+    border-right: dotted; 
 }
 
 .margins {
     margin-top: 25px;
 }
+
+.font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    background-color: orange;
+}
+
+
+

@@ -7,6 +7,20 @@
     font-size: small;
 }
 
-.card, .form-control, .btn{
+.card, .form-control{
     border-radius: 0%;
 }
+
+.product-btn{
+    size: smaller;
+}
+
+
+.margins {
+    margin-top: 25px;
+}
+
+.container {
+    background-color: orange;
+}
+
