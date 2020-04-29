@@ -8,17 +8,20 @@
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border-style: dashed;
+    border-style: dotted;
     background-color: orange;
     border-width: 5px;
-    margin-top: 25px;
+    margin-top: 50px;
+    border-color: black;
 }
 
 .picture {
-    border-style: solid;
+    border-style: double;
     text-align: right;
-    border-width: 10px;
+    border-width: 15px;
     margin-left: 50px;
+    margin-right: 50px;
+    border-color: black;
 }
 
 .hometext {
@@ -32,3 +35,11 @@
 .margins {
     margin-top: 25px;
 }
+
+.font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
