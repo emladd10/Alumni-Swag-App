@@ -1,3 +1,10 @@
 .white {
     color: white;
 }
+.productImage {
+text-align: center;
+height:100px;
+width: 100px;
+border-color: black;
+border-style: solid;
+}
