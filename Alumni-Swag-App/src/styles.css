@@ -7,6 +7,6 @@
     font-size: small;
 }
 
-.card, .form-control, .btn{
+.card, .form-control{
     border-radius: 0%;
 }
