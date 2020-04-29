@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { FilterComponent } from './shopping-cart/filter/filter.component';
+import { ProductListComponent } from './shopping-cart/product-list/product-list.component';
+import { CartComponent } from './shopping-cart/cart/cart.component';
 
 
 
@@ -11,6 +14,9 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     routingComponents,
+    FilterComponent,
+    ProductListComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
