@@ -11,15 +11,17 @@
     border-style: dashed;
     background-color: orange;
     border-width: 5px;
+    margin-top: 25px;
 }
 
 .picture {
     border-style: solid;
     text-align: right;
     border-width: 10px;
-
+    margin-left: 50px;
 }
 
 .hometext {
     border-color: rgb(255, 145, 0);
+    margin-top: 25px;
 }
