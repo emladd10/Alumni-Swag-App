@@ -9,7 +9,7 @@ import { Product } from 'src/app/models/product';
 })
 export class CartComponent implements OnInit {
 
-cartItems = []
+cartItem = []
 
   constructor(private msg: MessengerService) { }
 
@@ -23,16 +23,16 @@ cartItems = []
 
     let productExists = false
 
-for(let i in this.cartItems){
-        if(this.cartItems[i].id === product.id){
-          this.cartItems[i].qty++
+for(let i in this.cartItem){
+        if(this.cartItem[i].id === product.id){
+          this.cartItem[i].qty++
           productExists = true
           break;
         }
       }
 
     if(!productExists){
-      this.cartItems.push({
+      this.cartItem.push({
         productId: product.id,
         productName: Product.name,
         qty: 1,
