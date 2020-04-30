@@ -2,6 +2,6 @@
 
 <ul *ngIf="cartItems.length > 0" class="list-group">
     <li class="list-group-item" *ngFor="let item of cartItems">
-        <app-cart-item [cartItems]="item"></app-cart-item>
+        <app-cart-item cartItems="item"></app-cart-item>
     </li>
 </ul>
