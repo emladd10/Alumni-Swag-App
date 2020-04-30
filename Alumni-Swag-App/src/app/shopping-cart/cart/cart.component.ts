@@ -24,7 +24,7 @@ cartItem = []
     let productExists = false
 
 for(let i in this.cartItem){
-        if(this.cartItem[i].id === product.id){
+        if(this.cartItem[i].productId === product.id){
           this.cartItem[i].qty++
           productExists = true
           break;
@@ -34,7 +34,7 @@ for(let i in this.cartItem){
     if(!productExists){
       this.cartItem.push({
         productId: product.id,
-        productName: Product.name,
+        productName: product.name,
         qty: 1,
       })
     }
