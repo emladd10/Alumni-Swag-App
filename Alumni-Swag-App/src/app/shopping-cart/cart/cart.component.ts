@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MessengerService} from 'src/app/services/messenger.service'
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+cartItems = []
 
-  ngOnInit(): void {
+  constructor(private msg: MessengerService) { }
+
+  ngOnInit(){
+    this.msg.getMsg().subscribe((product: Product) =>{
+      this.addProductToCart(product)
+    })
   }
 
+  addProductToCart(product: Product){
+
+    let productExists = false
+
+for(let i in this.cartItems){
+        if(this.cartItems[i].id === product.id){
+          this.cartItems[i].qty++
+          productExists = true
+          break;
+        }
+      }
+
+    if(!productExists){
+      this.cartItems.push({
+        productId: product.id,
+        productName: Product.name,
+        qty: 1,
+      })
+    }
+    
+  }
 }
