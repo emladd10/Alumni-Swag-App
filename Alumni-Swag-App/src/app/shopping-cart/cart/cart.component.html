@@ -1,7 +1,7 @@
-<div *ngIf="cartItems.length === 0" class="alert alert-info">No Items in Cart</div>
+<div *ngIf="cartItem.length === 0" class="alert alert-info">No Items in Cart</div>
 
-<ul *ngIf="cartItems.length > 0" class="list-group">
-    <li class="list-group-item" *ngFor="let item of cartItems">
+<ul *ngIf="cartItem.length > 0" class="list-group">
+    <li class="list-group-item" *ngFor="let item of cartItem">
         <app-cart-item [cartItem]="item"></app-cart-item>
     </li>
 </ul>
