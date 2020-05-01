@@ -21,6 +21,9 @@
 }
 
 .container {
-    background-color: orange;
+    border-right: double;
+    border-left: double;
+    border-width: 150px;
+    border-color: orange;
 }
 
