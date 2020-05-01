@@ -37,4 +37,20 @@
     text-align: center;
 }
 
+.footer-images {
+    width: 25px;
+    height: 25px;
+    
+}
+
+.footer-images2 {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-margins {
+    margin-left: 155px;
+    margin-right: 50px;
+}
+
 
