@@ -12,15 +12,19 @@
     border-style: dotted;
     background-color: white;
     border-color:black;
-    border-width: 10px;
+    border-width: 3px;
+    background-color: rgba(77, 76, 76, 0.11);
 }
 
 .picture {
-    width: 790px;
+    width: 810px;
 
 }
 
-.hometext {
+.fancy {
+    border-left: solid;
+    border-right: solid;
+    border-color: black;
 }
 
 
