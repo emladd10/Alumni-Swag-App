@@ -2,8 +2,23 @@
 
     <div class="row margins">
         <div class="col-sm-12">
-            <div>
-               <p>custom works!</p>
+            <img class="tellus img-fluid" src = "/assets/img/tellus2.png">
+        </div>
+        <div class="col-sm-12">
+            <div> 
+                <Label ID="email1" runat="server">Email:</Label>
+                <p>
+                    <textarea ID="email" runat="server" style="width: 200px; height: 35px;"></textarea>
+                </p>
+                <p>
+                <Label ID="text1" runat="server">Type your message here:</Label>
+                </p>
+                <p>
+                    <textarea ID="message" runat="server" style="width: 600px; height: 200px;"></textarea>
+                </p>
+                <p class="textbox">
+                    <Button ID="submit" runat="server">Submit</Button>
+                </p>
             </div>
         </div>
     </div>
