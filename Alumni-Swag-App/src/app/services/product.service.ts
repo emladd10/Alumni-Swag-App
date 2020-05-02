@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 import { Product } from 'src/app/models/product'
+import { Observable } from 'rxjs';
+
+const apiUrl = "http://localhost:3000/products"
 
 @Injectable({
   providedIn: 'root'
@@ -13,13 +16,12 @@ products: Product[]= [
   new Product(3, "OSU Coffe Mug", "All Orange coffee mug with everyones favorite Pistol Pete on the front","https://d3qsmzzpeeacu6.cloudfront.net/all/LXG_CER%20MUG_CER1-ORN-OKSTATE-L1-CLC_1_800x800.jpg"),
   new Product(4, "OSU Sweat Pants", "Grey OSU sweat pants, great for running outdoors","https://www.rallyhouse.com/assets/images/products/14752527-1.jpg"),
   new Product(5, "OSU Koozie", "Keep the beverage of your choice as cold as it can be with the OSU koozie","https://www.rallyhouse.com/assets/images/products/15650272-1.jpg")
-
 ]
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getProducts(): Product[]{
-    return this.products
+  getProducts(): Observable<Product[]>{
+    return this.http.get<Product[]>(apiUrl)
   }
 }
 
