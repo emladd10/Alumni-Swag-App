@@ -1,4 +1,4 @@
-<div *ngIf="cartItem.length === 0" class="alert alert-info">No Items in Cart</div>
+<div *ngIf="cartItem.length === 0" class="alert alert-info" style = "margin-top:25px">No Items in Cart</div>
 
 <ul *ngIf="cartItem.length > 0" class="list-group">
     <li class="list-group-item" *ngFor="let item of cartItem">
