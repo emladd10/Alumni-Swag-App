@@ -9,6 +9,7 @@ import { ProductListComponent } from './shopping-cart/product-list/product-list.
 import { CartComponent } from './shopping-cart/cart/cart.component';
 import { CartItemComponent } from './shopping-cart/cart/cart-item/cart-item.component';
 import { ProductItemComponent } from './shopping-cart/product-list/product-item/product-item.component';
+import { CustomComponent } from './custom/custom.component';
 
 
 
@@ -21,6 +22,7 @@ import { ProductItemComponent } from './shopping-cart/product-list/product-item/
     CartComponent,
     CartItemComponent,
     ProductItemComponent,
+    CustomComponent,
   ],
   imports: [
     BrowserModule,
