@@ -28,3 +28,10 @@ border-style: solid;
     font-size: x-large; 
     font-weight: bold;
 }
+
+.catalog-icons {
+    width: 450px;
+    height: 400px;
+    margin-left: 175px;
+
+}
