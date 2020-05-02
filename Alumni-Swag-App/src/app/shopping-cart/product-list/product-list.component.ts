@@ -14,9 +14,7 @@ productList: Product[] = []
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.productService.getProducts().subscribe((products) => {
-      this.productList = products;
-    })
-  }
+    this.productList = this.productService.getProducts()
+    }
 
 }
