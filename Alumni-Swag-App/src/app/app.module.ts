@@ -10,7 +10,7 @@ import { CartComponent } from './shopping-cart/cart/cart.component';
 import { CartItemComponent } from './shopping-cart/cart/cart-item/cart-item.component';
 import { ProductItemComponent } from './shopping-cart/product-list/product-item/product-item.component';
 import { CustomComponent } from './custom/custom.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { CustomComponent } from './custom/custom.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
