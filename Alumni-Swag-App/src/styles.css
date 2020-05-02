@@ -21,8 +21,8 @@
 }
 
 .container {
-    border-right: double;
-    border-left: double;
+    border-right: solid;
+    border-left: solid;
     border-width: 150px;
     border-color: rgb(255, 115, 0);
 }
