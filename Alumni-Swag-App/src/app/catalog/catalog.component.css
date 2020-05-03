@@ -14,10 +14,10 @@ width: 50px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
-    border-style: dotted;
+    border-style: solid;
     background-color: white;
     border-color:black;
-    border-width: 3px;
+    border-width: 7px;
     background-color: rgba(77, 76, 76, 0.11);
 }
 
