@@ -1,17 +1,19 @@
 <div class="container">
-    <div class="row margins" style="font-family: Arial, Helvetica, sans-serif;">
-        <div class="col-sm-2">
-            <app-filter></app-filter>
+    <div class="row margins">
+            <div class="col-sm-2" style="font-family: Arial, Helvetica, sans-serif;">
+                <app-filter></app-filter>
+            </div>
+        
+            <div class="col-md-8" style="font-family: Arial, Helvetica, sans-serif;">
+                <app-product-list style="text-align:center">Item List</app-product-list>
+            </div>
+        
+            <div class="col-sm-2" style="font-family: Arial, Helvetica, sans-serif;">
+                <app-cart></app-cart>
+            </div>
         </div>
+
     
-        <div class="col-md-8">
-            <app-product-list style="text-align:center">Item List</app-product-list>
-        </div>
-    
-        <div class="col-sm-2">
-            <app-cart></app-cart>
-        </div>
-    </div>
     
     <!-- test button for don't see what you like for shopping cart page-->
     <div class="row" style="font-family: Arial, Helvetica, sans-serif;">
