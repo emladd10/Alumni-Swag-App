@@ -1,24 +1,11 @@
-<form method="post" action="mailto:qbenedict2@att.net" >
-    <input type="submit" value="Send Email" /> 
-    <div *ngIf="cartItem.length === 0" class="alert alert-info" style = "margin-top:25px">No Items in Cart</div>
+<div *ngIf="cartItem.length === 0" class="alert alert-info" style = "margin-top:25px">No Items in Cart</div>
 
 <ul *ngIf="cartItem.length > 0" class="list-group">
     <li class="list-group-item" *ngFor="let item of cartItem">
         <app-cart-item [cartItem]="item"></app-cart-item>
     </li>
 </ul>
-    </form>
-
-<!-- <div *ngIf="cartItem.length === 0" class="alert alert-info" style = "margin-top:25px">No Items in Cart</div>
-
-<ul *ngIf="cartItem.length > 0" class="list-group">
-    <li class="list-group-item" *ngFor="let item of cartItem">
-        <app-cart-item [cartItem]="item"></app-cart-item>
-    </li>
-</ul> -->
 
 <div class="row" style = "margin-left:20px">
-    <button type="button" class="btn btn-md btn-warning product-btn">Submit</button>
+    <button type="button" class="btn btn-md btn-warning product-btn" action="mailto:qbenedict2@att.net">Submit</button>
 </div>
-
-
